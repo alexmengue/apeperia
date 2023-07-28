@@ -214,6 +214,10 @@ body {
     margin-bottom: 1rem;
 }
 
+.about__img {
+    display: none;
+}
+
 .plans {
     background-color: var(--light-grey);
     padding-top: 3rem;
@@ -411,4 +415,112 @@ body {
 .footer__link {
     display: inline-block;
     margin: 0 0.5rem 0.7rem;
+}
+
+@media screen and (min-width: 768px) {
+    .call__text {
+        max-width: 600px;
+    }
+
+    .card {
+        max-width: 400px;
+    }
+
+    .info__contact-email {
+        display: inline-block;
+    }
+
+    .info__video {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px) / 2);
+        padding-right: calc((100% - 940px) / 2);
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        border: none;
+    }
+
+    .call {
+        background-image: url(../img/bg-intro.jpg);
+        background-size: cover;
+        padding-top: 8.25rem;
+    }
+
+    .call__title {
+        font-size: 3.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .differential {
+        background-color: var(--light-grey);
+    }
+
+    .differential__list {
+        justify-content: space-around;
+    }
+
+    .about {
+        display: flex;
+    }
+
+    .about__content {
+        margin-right: 3rem;
+    }
+
+    .about__title {
+        text-align: left;
+    }
+
+    .text__gap {
+        border-bottom: 1px solid var(--normal-grey);
+        padding-bottom: 1.5rem;
+    }
+
+    .about__img {
+        display: block;
+    }
+
+    .plans__cards {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .card {
+        max-width: 300px;
+    }
+
+    .info__content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .info__video {
+        align-self: flex-end;
+        width: 375px;
+    }
+
+    .info__contact-email {
+        display: block;
+    }
+
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer__nav {
+        text-align: left;
+        min-width: 600px;
+    }
 }
